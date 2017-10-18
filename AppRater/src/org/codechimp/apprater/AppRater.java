@@ -240,7 +240,7 @@ public class AppRater {
             builder = new AlertDialog.Builder(context);
         }
         ApplicationRatingInfo ratingInfo = ApplicationRatingInfo.createApplicationInfo(context);
-        builder.setTitle(String.format(context.getString(R.string.dialog_title), ratingInfo.getApplicationName()));
+        builder.setTitle(String.format(context.getString(R.string.dialog_title), ""));
 
         builder.setMessage(String.format(context.getString(R.string.rate_message), ratingInfo.getApplicationName()));
 
